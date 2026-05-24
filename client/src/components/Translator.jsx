@@ -59,7 +59,7 @@ const Translator = () => {
     formData.append('audio', blob, 'chunk.webm');
 
     try {
-      const response = await fetch('http://localhost:3001/process-audio', {
+      const response = await fetch('/api/process-audio', {
         method: 'POST',
         body: formData,
       });
